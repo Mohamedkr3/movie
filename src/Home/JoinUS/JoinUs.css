@@ -1,0 +1,17 @@
+
+.form-control:focus {
+    box-shadow: none  !important;
+    border: 1px solid #1399e7 !important;
+}
+.join-button {
+    color: white;
+    border: 1px solid #1399e7;
+    background-color: #1399e7;
+}
+.join-button:hover {
+    color: white;
+    background-color: #0b8bd5;
+}
+.form-control::placeholder {
+    color: rgb(161, 161, 161);
+}

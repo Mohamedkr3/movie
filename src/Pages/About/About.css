@@ -1,0 +1,60 @@
+.about-us {
+    background-image: url("../../../images/movie-collection.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height:40vh;
+}
+
+.about-us .row{
+    height: 100% !important;
+}
+.about-us .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+}
+
+
+.iamges-info .overlay{
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+}
+.iamges-info:hover .overlay{
+  transition: all 1s ;
+  opacity: 1;
+  -webkit-transition: all 1s ;
+  -moz-transition: all 1s ;
+  -ms-transition: all 1s ;
+  -o-transition: all 1s ;
+}
+.team-info svg{
+    padding-right: 10px;
+}
+
+.team-info svg:hover {
+    color: rgb(79, 155, 255);
+    transition: all 0.4s ;
+    opacity: 1;
+    -webkit-transition: all 0.4s ;
+    -moz-transition: all 0.4s ;
+    -ms-transition: all 0.4s ;
+    -o-transition: all 0.4s ;
+}
+@media only screen and (max-width: 595px) {
+    .mission-info .items-container{ 
+        width: 50% !important;
+        padding: 0px;
+    }
+}

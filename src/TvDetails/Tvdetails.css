@@ -1,0 +1,27 @@
+
+p{
+    font-weight: 500;
+}
+.related-films{
+    background-color: rgba(0, 0, 0, 0.986);
+}
+section .item .layer{
+    position: absolute;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+.table td{
+    font-size: 19px !important;
+}
+
+.category-tv{
+    width:1170px;
+}

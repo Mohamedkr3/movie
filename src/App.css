@@ -1,0 +1,182 @@
+body {
+    font-family: "Roboto Slab", serif !important;
+    --wp--preset--color--black: #000000;
+    --wp--preset--color--cyan-bluish-gray: #abb8c3;
+    --wp--preset--color--white: #ffffff;
+    --wp--preset--color--pale-pink: #f78da7;
+    --wp--preset--color--vivid-red: #cf2e2e;
+    --wp--preset--color--luminous-vivid-orange: #ff6900;
+    --wp--preset--color--luminous-vivid-amber: #fcb900;
+    --wp--preset--color--light-green-cyan: #7bdcb5;
+    --wp--preset--color--vivid-green-cyan: #00d084;
+    --wp--preset--color--pale-cyan-blue: #8ed1fc;
+    --wp--preset--color--vivid-cyan-blue: #0693e3;
+
+    --wp--preset--color--vivid-purple: #9b51e0;
+}
+
+/* navbar dropdown mene */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+/* navbar dropdown mene */
+/* Counter home */
+.countup {
+    background-image: url("../images/movie-collection.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.countup .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+}
+
+.main-title-head {
+    position: relative;
+}
+.main-title-head::after {
+    content: "";
+    background-color: #0693e3;
+    width: 150px;
+    bottom: -30%;
+
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.search {
+    border: 1px solid #0693e3;
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px ;
+    font-size: 21px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.search:focus {
+    outline: none;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px !important;
+}
+/* not found page */
+
+.not-found {
+    background-color: #212121;
+    height: 100vh;
+    margin: 0;
+    padding:0 ;
+}
+.not-found h1 {
+    font-size: 10rem;
+    color: white;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.not-found h2 {
+    font-size: 2.4rem;
+    color: white;
+}
+/* not found page */
+
+/* Counter home */
+
+/* movies-list card */
+
+.movies-list img {
+    
+    object-fit: cover;
+}
+/* movies-list  card*/
+/* pagination */
+
+/* pagination */
+
+/* Footer */
+
+footer {
+    background-color: #212121;
+    color: white;
+}
+
+footer .images-footer img {
+    width: 35%;
+}
+footer .footer-images-icons svg {
+    margin-left: 20px;
+    cursor: pointer;
+}
+footer .footer-images-icons svg:hover {
+    color: #62bff8;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+footer ul li {
+    color: #d7dcdf;
+    cursor: pointer;
+    font-size: 19px;
+    padding-top: 15px;
+}
+footer ul li:hover {
+    padding-left: 5px;
+    color: #62bff8;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+/* fOOTER */
+/* logoitems in home section */
+
+/* logoitems in home section */
+
+@media only screen and (max-width: 595px) {
+    .icons-informtion {
+        width: 33% !important;
+    }
+
+    /* counter  */
+
+    .counter-container {
+        width: 33% !important;
+    }
+    /* counter  */
+    footer .footer-item,
+    footer .footer-item .images-footer {
+        display: block !important;
+        text-align: center;
+    }
+    footer .images-footer img {
+        width: 55%;
+    }
+    footer .footer-images-icons svg {
+        padding-left: 25px;
+    }
+    footer .footer-container {
+        width: 50% !important;
+    }
+    footer article .copy-right {
+        display: block !important;
+        text-align: center;
+    }
+}
