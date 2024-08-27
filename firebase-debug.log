@@ -1,0 +1,103 @@
+[debug] [2024-08-26T04:21:08.886Z] ----------------------------------------------------------------------
+[debug] [2024-08-26T04:21:08.889Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\moham\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-08-26T04:21:08.889Z] CLI Version:   13.15.4
+[debug] [2024-08-26T04:21:08.889Z] Platform:      win32
+[debug] [2024-08-26T04:21:08.890Z] Node Version:  v20.13.1
+[debug] [2024-08-26T04:21:08.890Z] Time:          Mon Aug 26 2024 07:21:08 GMT+0300 (Eastern European Summer Time)
+[debug] [2024-08-26T04:21:08.890Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-26T04:21:08.954Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-26T04:21:08.954Z] > authorizing via signed-in user (mohamed3.khaled25@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\React project\movies
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-08-26T04:21:17.515Z] Using project from CLI flag: movies-react-ec6af
+[debug] [2024-08-26T04:21:17.518Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/movies-react-ec6af [none]
+[debug] [2024-08-26T04:21:18.146Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/movies-react-ec6af 403
+[debug] [2024-08-26T04:21:18.146Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/movies-react-ec6af {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-08-26T04:21:18.147Z] HTTP Error: 403, The caller does not have permission
+[debug] [2024-08-26T04:21:18.492Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\moham\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\moham\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:305:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project movies-react-ec6af. Please make sure the project exists and your account has permission to access it.
+[debug] [2024-08-26T04:24:29.283Z] ----------------------------------------------------------------------
+[debug] [2024-08-26T04:24:29.287Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\moham\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-08-26T04:24:29.287Z] CLI Version:   13.15.4
+[debug] [2024-08-26T04:24:29.287Z] Platform:      win32
+[debug] [2024-08-26T04:24:29.287Z] Node Version:  v20.13.1
+[debug] [2024-08-26T04:24:29.288Z] Time:          Mon Aug 26 2024 07:24:29 GMT+0300 (Eastern European Summer Time)
+[debug] [2024-08-26T04:24:29.288Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-26T04:24:29.376Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-26T04:24:29.376Z] > authorizing via signed-in user (mohamed3.khaled25@gmail.com)
+[debug] [2024-08-26T04:24:29.377Z] [iam] checking project movies-react-ec6af for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-08-26T04:24:29.379Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/movies-react-ec6af:testIamPermissions [none]
+[debug] [2024-08-26T04:24:29.379Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/movies-react-ec6af:testIamPermissions x-goog-quota-user=projects/movies-react-ec6af
+[debug] [2024-08-26T04:24:29.379Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/movies-react-ec6af:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-08-26T04:24:30.433Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/movies-react-ec6af:testIamPermissions 200
+[debug] [2024-08-26T04:24:30.433Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/movies-react-ec6af:testIamPermissions {}
+[debug] [2024-08-26T04:24:30.434Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project movies-react-ec6af:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2024-08-26T04:24:30.435Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/movies-react-ec6af [none]
+[debug] [2024-08-26T04:24:30.920Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/movies-react-ec6af 403
+[debug] [2024-08-26T04:24:30.921Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/movies-react-ec6af {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-08-26T04:24:30.921Z] HTTP Error: 403, The caller does not have permission
+[debug] [2024-08-26T04:24:31.122Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\moham\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\moham\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:305:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project movies-react-ec6af. Please make sure the project exists and your account has permission to access it.
+[debug] [2024-08-26T04:27:41.214Z] ----------------------------------------------------------------------
+[debug] [2024-08-26T04:27:41.216Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\moham\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-08-26T04:27:41.217Z] CLI Version:   13.15.4
+[debug] [2024-08-26T04:27:41.217Z] Platform:      win32
+[debug] [2024-08-26T04:27:41.217Z] Node Version:  v20.13.1
+[debug] [2024-08-26T04:27:41.217Z] Time:          Mon Aug 26 2024 07:27:41 GMT+0300 (Eastern European Summer Time)
+[debug] [2024-08-26T04:27:41.217Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-26T04:27:41.280Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-26T04:27:41.280Z] > authorizing via signed-in user (mohamed3.khaled25@gmail.com)
+[debug] [2024-08-26T04:27:41.280Z] [iam] checking project movies-react-ec6af for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-08-26T04:27:41.282Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/movies-react-ec6af:testIamPermissions [none]
+[debug] [2024-08-26T04:27:41.282Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/movies-react-ec6af:testIamPermissions x-goog-quota-user=projects/movies-react-ec6af
+[debug] [2024-08-26T04:27:41.282Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/movies-react-ec6af:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-08-26T04:27:42.352Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/movies-react-ec6af:testIamPermissions 200
+[debug] [2024-08-26T04:27:42.352Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/movies-react-ec6af:testIamPermissions {}
+[debug] [2024-08-26T04:27:42.353Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project movies-react-ec6af:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2024-08-26T04:27:42.354Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/movies-react-ec6af [none]
+[debug] [2024-08-26T04:27:42.718Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/movies-react-ec6af 403
+[debug] [2024-08-26T04:27:42.719Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/movies-react-ec6af {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-08-26T04:27:42.719Z] HTTP Error: 403, The caller does not have permission
+[debug] [2024-08-26T04:27:42.962Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\moham\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\moham\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:305:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project movies-react-ec6af. Please make sure the project exists and your account has permission to access it.
